@@ -1,11 +1,6 @@
----
-name: React Content Script UI
-description: Basic example of using createShadowRootUi with React.
-apis:
-  - createShadowRootUi
----
-
-```sh
-pnpm i
-pnpm dev
-```
+## Linkedin Mock Extension 
+# WXT framework
+# React, Typescript, TailwindCSS
+# Instance Focus Detection
+# Global Zustand Store Implementation
+# Generate and insert Response to Forms
