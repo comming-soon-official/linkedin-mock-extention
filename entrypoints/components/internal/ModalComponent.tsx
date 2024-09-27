@@ -8,6 +8,7 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { useUniversalStore } from "@/entrypoints/store/useUniversalStore";
 import { insertText } from "./utils";
+import { CONSTANTS } from "@/entrypoints/constant";
 const responseTxt =
   "Thank you for the opportunity! If you have any more questions or if there's anything else I can help you with, feel free to ask.";
 
@@ -95,7 +96,7 @@ const ModalComponent = ({
                   setIsModalOpen(false);
                   insertText(
                     document.querySelector(
-                      `.msg-form__contenteditable[data-linkedin-ext-id="${activeInputId}"]`
+                      `.${CONSTANTS.INPUT_AREA_CLASS}[${CONSTANTS.INPUT_AREA_DATA_ATTR}="${activeInputId}"]`
                     ) as HTMLElement,
                     response.server
                   );
@@ -121,5 +122,3 @@ const ModalComponent = ({
 };
 
 export default ModalComponent;
-
-const data = "data-artdeco-is-focused='true'";

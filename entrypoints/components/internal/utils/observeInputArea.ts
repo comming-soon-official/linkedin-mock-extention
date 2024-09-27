@@ -1,3 +1,4 @@
+import { CONSTANTS } from "@/entrypoints/constant";
 import { addSVGIconToInputBox, removeSVGIconFromInputBox } from ".";
 
 const observeInputArea = (): void => {
@@ -12,7 +13,7 @@ const observeInputArea = (): void => {
     const activeElement = document.activeElement as HTMLElement;
     if (
       activeElement &&
-      activeElement.classList.contains("msg-form__contenteditable")
+      activeElement.classList.contains(CONSTANTS.INPUT_AREA_CLASS)
     ) {
       handleFocus(activeElement);
       activeElement.addEventListener("blur", () => handleBlur(activeElement), {

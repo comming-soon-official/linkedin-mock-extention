@@ -1,4 +1,5 @@
 // Start of Selection
+import { CONSTANTS } from "@/entrypoints/constant";
 import { useUniversalStore } from "@/entrypoints/store/useUniversalStore";
 
 import { clsx, type ClassValue } from "clsx";
@@ -45,10 +46,11 @@ export const addSVGIconToInputBox = (element: HTMLElement): void => {
   element.appendChild(icon);
 
   const uuid =
-    element.getAttribute("data-linkedin-ext-id") || window.crypto.randomUUID();
+    element.getAttribute(CONSTANTS.INPUT_AREA_DATA_ATTR) ||
+    window.crypto.randomUUID();
 
-  if (!element.hasAttribute("data-linkedin-ext-id")) {
-    element.setAttribute("data-linkedin-ext-id", uuid);
+  if (!element.hasAttribute(CONSTANTS.INPUT_AREA_DATA_ATTR)) {
+    element.setAttribute(CONSTANTS.INPUT_AREA_DATA_ATTR, uuid);
   }
 
   useUniversalStore.getState().setActiveInputId(uuid);
