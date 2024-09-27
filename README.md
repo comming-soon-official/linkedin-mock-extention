@@ -51,7 +51,7 @@ Follow these steps to install and run the LinkedIn Mock Extension locally:
 
 ## Usage
 
-Once the extension is loaded, it will automatically activate on LinkedIn pages. 
+Once the extension is loaded, it will automatically activate on LinkedIn pages.
 
 ## Development
 
@@ -78,7 +78,7 @@ Contributions are always welcome! To contribute:
 
 Watch the demo video to see how the extension works:
 
-[![LinkedIn Mock Extension Demo](https://www.youtube.com/watch?v=PJBc1akIM5s)
+[![LinkedIn Mock Extension Demo](https://i9.ytimg.com/vi/PJBc1akIM5s/mqdefault.jpg?sqp=COSa2bcG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGAgYChgMA8=&rs=AOn4CLBlPCsiYOCfiwaDQmUM-GEGsNP4WA)](https://www.youtube.com/watch?v=PJBc1akIM5s)
 
 Click the image above or [here](https://www.youtube.com/watch?v=PJBc1akIM5s) to watch the full demo on YouTube!
 
